@@ -14,6 +14,8 @@ This keylogger and server are written in python, using 3.10 features. The logger
 
 The server collects the logs from the client and stores them in a file unique for each user based on IP address.
 
+Local logs are retained until the packet is successfully saved on the server.
+
 ## Usage
 
 ### Setting up the keylogger
