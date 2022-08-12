@@ -1,10 +1,21 @@
-logger := keylogger.py
+py := python # python command
+logger := keylogger.py # main logger entry point
 
 run:: $(logger)
 	python $(logger)
 
+.PHONY: build
 build::
-	pyinstaller --onefile $(logger)
+	pyinstaller \
+		--onefile \
+		$(logger)
 
 clean::
-	@rm -rf build/ dist/ __pycache__/ *.spec
+	@rm -rf \
+		build/ \
+		dist/ \
+		__pycache__/ \
+		*.spec
+
+install:: requirements.txt
+	pip install -r requirements.txt
