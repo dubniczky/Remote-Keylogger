@@ -1,8 +1,13 @@
 py := python # python command
 logger := keylogger.py # main logger entry point
+server := server.py # server entry point
 
-run:: $(logger)
+
+logger:: $(logger)
 	python $(logger)
+
+server:: $(server)
+	python $(server)
 
 .PHONY: build
 build::

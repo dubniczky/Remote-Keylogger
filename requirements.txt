@@ -3,3 +3,4 @@ pynput
 fastapi
 uvicorn
 pydantic
+pyinstaller
