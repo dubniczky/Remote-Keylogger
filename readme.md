@@ -8,6 +8,12 @@ If you find the project useful, please consider supporting, or contributing.
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/dubniczky)
 
+## Description
+
+This keylogger and server are written in python, using 3.10 features. The logger runs in the background without a window or console and logs key presses. Every few seconds it sends those key presses to a server using an HTTP request.
+
+The server collects the logs from the client and stores them in a file unique for each user based on IP address.
+
 ## Usage
 
 ### Setting up the keylogger
