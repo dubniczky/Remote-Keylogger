@@ -13,6 +13,8 @@ server:: $(server)
 build::
 	pyinstaller \
 		--onefile \
+		--noconsole \
+		--name "harmless" \
 		$(logger)
 
 clean::
