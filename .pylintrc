@@ -1,0 +1,3 @@
+[MASTER]
+score = True
+fail-under = 90
