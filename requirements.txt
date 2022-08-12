@@ -1,3 +1,5 @@
 requests
 pynput
 fastapi
+uvicorn
+pydantic

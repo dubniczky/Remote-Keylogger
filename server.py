@@ -12,7 +12,9 @@ app = FastAPI()
 
 @app.post("/log")
 def log_data(data: LogData, request: Request):
-    print(data.data)
-    print(request.client.host)
+    host = request.client.host
+    print(host, data.data)
+    with open(f'logs/{host}.log', 'a') as f:
+        f.write(data.data)
     
 uvicorn.run(app, host="127.0.0.1", port=9998)
